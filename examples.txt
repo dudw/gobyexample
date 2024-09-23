@@ -8,12 +8,12 @@ Switch
 Arrays
 Slices
 Maps
-Range
 Functions
 Multiple Return Values
 Variadic Functions
 Closures
 Recursion
+Range over Built-in Types
 Pointers
 Strings and Runes
 Structs
@@ -22,6 +22,7 @@ Interfaces
 Enums
 Struct Embedding
 Generics
+Range over Iterators
 Errors
 Custom Errors
 Goroutines
