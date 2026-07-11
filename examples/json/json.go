@@ -79,9 +79,9 @@ func main() {
 
 	// We need to provide a variable where the JSON
 	// package can put the decoded data. This
-	// `map[string]interface{}` will hold a map of strings
+	// `map[string]any` will hold a map of strings
 	// to arbitrary data types.
-	var dat map[string]interface{}
+	var dat map[string]any
 
 	// Here's the actual decoding, and a check for
 	// associated errors.
@@ -102,7 +102,7 @@ func main() {
 
 	// Accessing nested data requires a series of
 	// conversions.
-	strs := dat["strs"].([]interface{})
+	strs := dat["strs"].([]any)
 	str1 := strs[0].(string)
 	fmt.Println(str1)
 
